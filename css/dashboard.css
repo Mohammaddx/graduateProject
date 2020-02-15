@@ -4,6 +4,42 @@ html {
   margin: 0;
 }
 
+.uk-offcanvas-bar {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#000, transparent),
+    url(../images/backgroundDAsh.jfif);
+}
+
+.uk-offcanvas-bar .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uk-offcanvas-bar ul {
+  list-style-type: none;
+}
+
+.uk-offcanvas-bar ul li {
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+
+.uk-offcanvas-bar ul li:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+.uk-offcanvas-bar #slide1,
+.uk-offcanvas-bar #slide2,
+.uk-offcanvas-bar #slide3 {
+  font-size: 20px;
+  cursor: pointer;
+}
+
 header nav .container {
   padding: 10px;
   display: flex;
