@@ -13,6 +13,7 @@ body {
   padding: 10px;
   font-family: "Cairo", sans-serif;
   margin-bottom: 10px;
+  background-color: #fff;
 }
 
 .club-page .container .row .card:hover {
