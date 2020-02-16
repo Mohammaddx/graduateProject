@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(".club-link").click(function() {
     console.log("done1");
 
-    $(".dashboard-view").load("clubs.html");
+    $(".dashboard-view").load("club.html");
   });
 
   $(".player-link").click(function() {
