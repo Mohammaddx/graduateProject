@@ -1,0 +1,50 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background-color: #f5f6fa;
+}
+
+.matches-page {
+  padding: 20px;
+}
+
+.matches-page .add {
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: #fff;
+  transition-duration: 0.4s;
+  border: 1px solid #587ef5;
+  background-color: #587ef5;
+}
+
+.matches-page .add:hover {
+  box-shadow: 1px 1px 10px 1px #587ef5;
+}
+
+.matches-page .card {
+  text-align: center;
+  padding: 10px;
+  font-family: "Cairo", sans-serif;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.matches-page .card:hover {
+  box-shadow: 1px 1px 10px 1px #aaa;
+}
+
+.matches-page .Team-name,
+.matches-page .scour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.matches-page .card .logoT1 img,
+.matches-page .card .logoT2 img {
+  width: 150px;
+  height: 100px;
+}
