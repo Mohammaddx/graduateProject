@@ -1,7 +1,8 @@
-body {
+body,
+html {
   padding: 0;
   margin: 0;
-  font-family: "Cairo", sans-serif;
+  background-color: #f5f6fa;
 }
 
 .club-page {

@@ -2,126 +2,68 @@ body,
 html {
   padding: 0;
   margin: 0;
+  background-color: #f5f6fa;
 }
 
 .uk-offcanvas-bar {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(#000, transparent),
-    url(../images/backgroundDAsh.jfif);
+  background-color: #fff !important;
+  padding: 0 !important;
 }
 
-.uk-offcanvas-bar .head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.uk-offcanvas-bar .heading {
+  background-color: #587ef5;
+  padding: 10px 10px;
+  text-align: right;
 }
-
 .uk-offcanvas-bar ul {
   list-style-type: none;
 }
 
 .uk-offcanvas-bar ul li {
-  padding: 5px 20px;
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
   transition-duration: 0.3s;
+  color: #aaa;
 }
 
 .uk-offcanvas-bar ul li:hover {
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: #587ef5;
+  color: #fff;
+  box-shadow: 1px 1px 10px 1px #587ef5;
 }
 
-.uk-offcanvas-bar #slide1,
-.uk-offcanvas-bar #slide2,
-.uk-offcanvas-bar #slide3 {
-  font-size: 20px;
-  cursor: pointer;
-}
-
-header nav .container {
-  padding: 10px;
+header nav {
+  box-shadow: 1px 1px 5px 1px #aaa;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 20px;
 }
 
-header nav .container .heading h3 {
-  color: #465051;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;
-}
-
-header nav .container .messages button {
+header nav .messages {
   color: #aaa;
   font-size: 20px;
-  cursor: pointer;
-  text-align: center;
-  border-width: 0;
-  background-color: #fff;
 }
 
-header nav .container .messages button sup {
-  color: #fff;
-  background-color: #de3c3a;
+header nav .messages .message-span {
+  cursor: pointer;
+}
+
+.message sup {
+  background-color: firebrick;
   padding: 1px 5px;
-  position: relative;
-  top: -10px;
-  margin-left: -10px;
-  font-size: 10px;
   border-radius: 50%;
-  font-weight: bold;
+  color: #fff;
+  margin-left: -8px;
+  margin-top: -4;
+  border: 1px solid #fff;
 }
 
-header nav .container .messages .view-messages {
+header nav .menu button {
   border-width: 0;
-  box-shadow: 1px 1px 10px 1px #aaa;
-  width: 250px;
-  margin-left: -100px;
 }
-
-header nav .container .messages .header {
-  color: dodgerblue;
-  padding: 0px 10px;
-}
-
-header nav .container .messages .message {
-  display: flex;
-  align-items: center;
-  padding: 3px 5px;
-  border-bottom: 1px solid #aaa;
-  cursor: pointer;
-  background-color: #f4efef;
-}
-
-header nav .container .messages .message .image img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-header nav .container .messages .message .info {
-  line-height: 0;
-  margin-left: 2px;
-}
-
-header nav .container .messages .message .info h6 {
-  font-weight: bold;
-  line-height: 0;
-}
-
-header nav .container .messages .message .info span {
-  font-size: 12px;
-  color: #aaa;
-}
-
-header nav .container .messages .footer {
-  text-align: center;
-  font-size: 15px;
-}
-
-header nav .container .messages .footer a:hover {
-  text-decoration: none;
+.dashboard-view {
+  height: 100vh;
 }
