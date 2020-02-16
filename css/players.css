@@ -10,6 +10,36 @@ html {
   padding: 20px;
 }
 
+.club-page .search-add {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.club-page .search-add .add,
+.club-page .search-add .search {
+  margin-bottom: 10px;
+}
+
+.club-page .search-add .add button {
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: #fff;
+  transition-duration: 0.4s;
+  border: 1px solid #587ef5;
+  background-color: #587ef5;
+}
+
+.club-page .search-add .add button:hover {
+  box-shadow: 1px 1px 10px 1px #587ef5;
+}
+
+.club-page .search-add .search form input {
+  width: 200px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+}
+
 .club-page .container .row .card {
   text-align: center;
   padding: 10px;
