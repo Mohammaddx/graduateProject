@@ -11,11 +11,11 @@
     />
     <!--Font awesome-->
     <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous"
+  />
     <!--Css files-->
     <link
       rel="stylesheet"
@@ -28,84 +28,39 @@
     <link rel="stylesheet" href="./css/dashboard.css" />
   </head>
   <body>
-    <div class="page">
+    <div class="dashboard-page">
       <header>
         <nav>
-          <div class="container">
-            <div class="button">
-              <button
-                class="uk-button uk-button-default uk-margin-small-right"
-                type="button"
-                uk-toggle="target: #offcanvas-push"
-              >
-                <i class="fa fa-bars"></i> Menu
-              </button>
-            </div>
-            <div class="heading">
-              <h3>
-                PALESTINIAN FOOTBALL ASSOCIATION MANAGEMENT SYSTEM (PFAMS)
-              </h3>
-            </div>
-            <div class="messages">
-              <div class="uk-inline">
-                <button class="uk-button uk-button-default" type="button">
-                  <i class="fa fa-envelope"></i> <sup>4</sup>
-                </button>
-                <div uk-dropdown="mode: click" class="view-messgaes">
-                  <div class="container">
-                    <div class="header">
-                      <span>Messages: 4</span>
-                    </div>
-                    <div></div>
-                    <div></div>
-                    <div class="footer"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="menu">
+            <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-reveal"><i class="fas fa-bars"></i> Menu</button>
+          </div>
+          <div class="messages">
+            <label class="message-span">
+                <i class="fas fa-envelope message" id="message"><sup>3</sup></i><label for="message"></label></label>
           </div>
         </nav>
       </header>
 
-      <!--header end-->
+      <div class="dashboard-view">
 
-      <div class="body">
-        <div class="container"></div>
       </div>
+    </div>
+  
 
       <!--sidebar-->
-      <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+      <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
         <div class="uk-offcanvas-bar">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-          <h3>Title</h3>
-
-          <div class="club">
-            <span>Club</span>
-            <ul>
-              <li><i class="fa fa-plus-circle"></i> Add Club</li>
-              <li><i class="fa fa-edit"></i> Edit Club</li>
-              <li><i class="fa fa-trash"></i> Delete Club</li>
-            </ul>
+          <div class="heading">
+            <h3>(PFAMS)</h3>
           </div>
+    
 
-          <div class="player">
-            <span>Players</span>
             <ul>
-              <li><i class="fa fa-plus-circle"></i> Add Player</li>
-              <li><i class="fa fa-edit"></i> Edit Player</li>
-              <li><i class="fa fa-trash"></i> Delete Player</li>
+              <li class="club-link">Clubs</li>
+              <li class="player-link">Players</li>
+              <li class="matches-link">Matches</li>
             </ul>
-          </div>
-
-          <div class="match">
-            <span>Matches</span>
-            <ul>
-              <li><i class="fa fa-plus-circle"></i> Add Match</li>
-              <li><i class="fa fa-edit"></i> Edit Match</li>
-              <li><i class="fa fa-trash"></i> Delete Match</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -115,6 +70,7 @@
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -127,5 +83,6 @@
     ></script>
     <script src="js/uikit-icons.min.js"></script>
     <script src="js/uikit.min.js"></script>
+    <script src="./js/dashboardTransition.js"></script>
   </body>
 </html>

@@ -2,48 +2,68 @@ body,
 html {
   padding: 0;
   margin: 0;
+  background-color: #f5f6fa;
 }
 
-header nav .container {
-  padding: 10px;
+.uk-offcanvas-bar {
+  background-color: #fff !important;
+  padding: 0 !important;
+}
+
+.uk-offcanvas-bar .heading {
+  background-color: #587ef5;
+  padding: 10px 10px;
+  text-align: right;
+}
+.uk-offcanvas-bar ul {
+  list-style-type: none;
+}
+
+.uk-offcanvas-bar ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+  color: #aaa;
+}
+
+.uk-offcanvas-bar ul li:hover {
+  background-color: #587ef5;
+  color: #fff;
+  box-shadow: 1px 1px 10px 1px #587ef5;
+}
+
+header nav {
+  box-shadow: 1px 1px 5px 1px #aaa;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 20px;
 }
 
-header nav .container .heading h3 {
-  color: #465051;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;
-}
-
-header nav .container .messages button {
+header nav .messages {
   color: #aaa;
   font-size: 20px;
+}
+
+header nav .messages .message-span {
   cursor: pointer;
-  text-align: center;
+}
+
+.message sup {
+  background-color: firebrick;
+  padding: 1px 5px;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: -8px;
+  margin-top: -4;
+  border: 1px solid #fff;
+}
+
+header nav .menu button {
   border-width: 0;
 }
-
-header nav .container .messages button sup {
-  color: #fff;
-  background-color: #de3c3a;
-  padding: 1px 5px;
-  position: relative;
-  top: -10px;
-  margin-left: -10px;
-  font-size: 10px;
-  border-radius: 50%;
-  font-weight: bold;
-}
-
-header nav .container .messages .view-messgaes {
-  padding: 0px;
-  background-color: #eee;
-}
-
-header nav .container .messages .header {
-  color: dodgerblue;
-  width: 100%;
+.dashboard-view {
+  height: 100vh;
 }
