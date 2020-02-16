@@ -46,20 +46,40 @@
                 PALESTINIAN FOOTBALL ASSOCIATION MANAGEMENT SYSTEM (PFAMS)
               </h3>
             </div>
-            <div class="messages">
-              <div class="uk-inline">
-                <button class="uk-button uk-button-default" type="button">
-                  <i class="fa fa-envelope"></i> <sup>4</sup>
-                </button>
-                <div uk-dropdown="mode: click" class="view-messgaes">
-                  <div class="container">
-                    <div class="header">
-                      <span>Messages: 4</span>
-                    </div>
-                    <div></div>
-                    <div></div>
-                    <div class="footer"></div>
+            <div class="messages btn-group">
+              <button
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa fa-envelope"></i> <sup>4</sup>
+              </button>
+              <div class="dropdown-menu view-messages">
+                <div class="header">
+                  <span>Messages: <span>4</span>
+                </div>
+                <div class="message">
+                  <div class="image">
+                    <img src="./images/logo.jfif" />
                   </div>
+                  <div class="info">
+                    <h6>نادي شويكة</h6>
+                    <span><span>You: </span> ok, u got it</span>
+                  </div>
+                </div>
+
+                <div class="message">
+                  <div class="image">
+                    <img src="./images/logo.jfif" />
+                  </div>
+                  <div class="info">
+                    <h6>نادي شويكة</h6>
+                    <span><span>You: </span> ok, u got it</span>
+                  </div>
+                </div>
+                <div class="footer">
+                  <span><a href="#">View all</ah></span>
                 </div>
               </div>
             </div>
@@ -78,10 +98,13 @@
         <div class="uk-offcanvas-bar">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-          <h3>Title</h3>
+          <h3>(PFAMS)</h3>
 
           <div class="club">
-            <span>Club</span>
+            <div class="head">
+              <span>Club</span> <i class="fa fa-angle-down" id="slide1"></i>
+            </div>
+
             <ul>
               <li><i class="fa fa-plus-circle"></i> Add Club</li>
               <li><i class="fa fa-edit"></i> Edit Club</li>
@@ -90,7 +113,10 @@
           </div>
 
           <div class="player">
-            <span>Players</span>
+            <div class="head">
+              <span>Players</span> <i class="fa fa-angle-down" id="slide2"></i>
+            </div>
+
             <ul>
               <li><i class="fa fa-plus-circle"></i> Add Player</li>
               <li><i class="fa fa-edit"></i> Edit Player</li>
@@ -99,7 +125,10 @@
           </div>
 
           <div class="match">
-            <span>Matches</span>
+            <div class="head">
+              <span>Matches</span> <i class="fa fa-angle-down" id="slide3"></i>
+            </div>
+
             <ul>
               <li><i class="fa fa-plus-circle"></i> Add Match</li>
               <li><i class="fa fa-edit"></i> Edit Match</li>
@@ -115,6 +144,7 @@
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -127,5 +157,6 @@
     ></script>
     <script src="js/uikit-icons.min.js"></script>
     <script src="js/uikit.min.js"></script>
+    <script src="./js/dropDown.js"></script>
   </body>
 </html>
