@@ -42,7 +42,7 @@ header nav {
   padding: 5px 20px;
 }
 
-header nav .messages {
+header nav .messages a {
   color: #aaa;
   font-size: 20px;
 }

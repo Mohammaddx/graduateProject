@@ -1,0 +1,224 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.massages-page header nav {
+  box-shadow: 1px 1px 3px 1px #aaa;
+  display: flex;
+  align-items: center;
+}
+
+.massages-page header nav .menu {
+  background-color: #009ef7;
+  padding: 5px 10px;
+  color: #fff;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  cursor: pointer;
+}
+
+.massages-page header nav .menu:hover {
+  box-shadow: 1px 1px 5px 1px #009ef7;
+}
+
+.massages-page header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 10px 5px;
+}
+
+.massages-page header nav .container .heading {
+  font-weight: bold;
+}
+
+.massages-page header nav .container .go-back a {
+  font-size: 12px;
+  color: #009ef7;
+  border: 1px solid #009ef7;
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+.massages-page header nav .container .go-back a:hover {
+  color: #fff;
+  background-color: #009ef7;
+  box-shadow: 1px 1px 10px 1px #009ef7;
+}
+
+/* navbar is done*/
+
+.body {
+  display: flex;
+}
+
+.body .left-side {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  width: 300px;
+  box-shadow: 1px 1px 3px 1px #aaa;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 0;
+  transition-duration: 0.4s;
+  z-index: 99;
+}
+.body .left-side .container {
+  padding: 0;
+}
+.body .left-side .container .user-card {
+  padding: 20px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #aaa;
+  transition-duration: 0.3s;
+}
+
+.body .left-side .container .user-card:hover {
+  background-color: #009ef7;
+  box-shadow: 1px 1px 10px 1px #aaa;
+}
+
+.body .left-side .container .user-card .user-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body .left-side .container .user-card .user-card-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.body .left-side .container .user-card .user-card-container .info * {
+  display: block;
+  font-size: 13px;
+  margin-left: -20%;
+}
+
+.body
+  .left-side
+  .container
+  .user-card
+  .user-card-container
+  .info
+  span:nth-child(1) {
+  font-weight: bold;
+}
+
+.body
+  .left-side
+  .container
+  .user-card
+  .user-card-container
+  .info
+  span:nth-child(2) {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.body
+  .left-side
+  .container
+  .user-card:hover
+  .user-card-container
+  .info
+  span:nth-child(2) {
+  color: #fff;
+}
+
+.body .left-side .container .user-card .user-card-container .time {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.body .left-side .container .user-card:hover .user-card-container .time {
+  color: #fff;
+}
+
+/*left side is done*/
+
+.body .right-side {
+  position: fixed;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 75%;
+  right: 0;
+  transition-duration: 0.4s;
+}
+
+.body .right-side .container .conv .response .message-response {
+  font-size: 13px;
+  background-color: #aaa;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px 20px;
+  width: fit-content;
+}
+
+.body .right-side .container .conv {
+  padding: 10px;
+}
+
+.body .right-side .container .conv .send {
+  padding: 15px 0;
+}
+.body .right-side .container .conv .send .message-send {
+  font-size: 13px;
+  background-color: #475677;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 10px 20px;
+  width: fit-content;
+  color: #fff;
+  text-align: right;
+  float: right;
+}
+
+.body .right-side .container .write {
+  position: fixed;
+  bottom: 0;
+  left: 300px;
+  width: 75%;
+  box-shadow: 1px 1px 10px 1px #aaa;
+  border-top: 1px solid #aaa;
+  padding: 10px;
+  transition-duration: 0.4s;
+}
+
+.body .right-side .container .write form input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+}
+
+.body .right-side .container .write form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.body .right-side .container .write form input[type="submit"] {
+  border-width: 0;
+  background-color: transparent;
+  font-size: 20px;
+  color: #009ef7;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 500px) {
+  .massages-page header nav .container .go-back a {
+    font-size: 12px;
+  }
+}
