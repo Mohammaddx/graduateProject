@@ -38,7 +38,9 @@
           <div class="row">
             <div class="col-md-6 colsm-12 col-xs-12">
               <div class="add">
-                <button><i class="fas fa-plus"></i> Add Club</button>
+                <button href="#modal-add" uk-toggle>
+                  <i class="fas fa-plus"></i> Add Club
+                </button>
               </div>
             </div>
 
@@ -122,7 +124,7 @@
                 <button type="button" class="btn btn-primary">
                   <i class="fa fa-info-circle"></i> Info
                 </button>
-                <button type="button" class="btn btn-secondary">
+                <button class="btn btn-secondary" href="#modal-edit" uk-toggle>
                   <i class="fa fa-edit"></i> Edit
                 </button>
                 <button
@@ -160,6 +162,79 @@
       </div>
     </div>
     <!--edit Modal-->
+
+    <div id="modal-edit" class="uk-modal-full" uk-modal>
+      <div class="uk-modal-dialog">
+        <button
+          class="uk-modal-close-full uk-close-large"
+          type="button"
+          uk-close
+        ></button>
+        <div
+          class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
+          uk-grid
+        >
+          <div
+            class="uk-background-cover"
+            style="background-image: url('./images/editbg.jpg');"
+            uk-height-viewport
+          ></div>
+          <div class="uk-padding-large">
+            <h1>Edit Club</h1>
+            <form>
+              <input type="text" placeholder="club name" />
+              <input type="text" placeholder="managment club name" />
+
+              <input type="text" placeholder="administrative board" />
+              <input type="text" placeholder="club class" />
+
+              <input type="number" placeholder="players number" />
+              <input type="text" placeholder="club place" />
+              <input type="text" placeholder="phone number" />
+              <div><input type="submit" value="Edit" /></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal add-->
+
+    <div id="modal-add" class="uk-modal-full" uk-modal>
+      <div class="uk-modal-dialog">
+        <button
+          class="uk-modal-close-full uk-close-large"
+          type="button"
+          uk-close
+        ></button>
+        <div
+          class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
+          uk-grid
+        >
+          <div
+            class="uk-background-cover"
+            style="background-image: url('./images/addbg.jpg');"
+            uk-height-viewport
+          ></div>
+          <div class="uk-padding-large">
+            <h1>Add Club</h1>
+            <form>
+              <input type="text" placeholder="club name" />
+              <input type="text" placeholder="managment club name" />
+
+              <input type="text" placeholder="administrative board" />
+              <input type="text" placeholder="club class" />
+
+              <input type="number" placeholder="players number" />
+              <input type="text" placeholder="club place" />
+              <input type="text" placeholder="phone number" />
+
+              <div><input type="submit" value="Add" /></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--Js files-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

@@ -63,6 +63,7 @@ html {
 #modal-edit .uk-padding-large form input[type="submit"] {
   border-color: green;
   color: green;
+  background-color: #fff;
   transition-duration: 0.4s;
 }
 
@@ -75,6 +76,7 @@ html {
 #modal-add .uk-padding-large form input[type="submit"] {
   border-color: #009ef7;
   color: #009ef7;
+  background-color: #fff;
   transition-duration: 0.4s;
 }
 
