@@ -125,7 +125,11 @@
                 <button type="button" class="btn btn-secondary">
                   <i class="fa fa-edit"></i> Edit
                 </button>
-                <button type="button" class="btn btn-danger">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  uk-toggle="target: #modal-delete"
+                >
                   <i class="fa fa-trash"></i> Delete
                 </button>
               </div>
@@ -134,6 +138,28 @@
         </div>
       </div>
     </div>
+
+    <!--Modals-->
+
+    <!--delete Modal-->
+    <div id="modal-delete" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Delete</h2>
+        <p>Are you sure you want to delete it?</p>
+        <p class="uk-text-right">
+          <button
+            class="uk-button uk-button-default uk-modal-close"
+            type="button"
+          >
+            Cancel
+          </button>
+          <button class="uk-button uk-button-danger" type="button">
+            Delete
+          </button>
+        </p>
+      </div>
+    </div>
+    <!--edit Modal-->
     <!--Js files-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

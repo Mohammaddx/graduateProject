@@ -48,3 +48,38 @@ html {
   width: 150px;
   height: 100px;
 }
+
+/*modal style*/
+
+#modal-edit .uk-padding-large form input,
+#modal-add .uk-padding-large form input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#modal-edit .uk-padding-large form input[type="submit"] {
+  border-color: green;
+  color: green;
+  transition-duration: 0.4s;
+}
+
+#modal-edit .uk-padding-large form input[type="submit"]:hover {
+  background-color: green;
+  color: #fff;
+  box-shadow: 1px 1px 10px 1px green;
+}
+
+#modal-add .uk-padding-large form input[type="submit"] {
+  border-color: #009ef7;
+  color: #009ef7;
+  transition-duration: 0.4s;
+}
+
+#modal-add .uk-padding-large form input[type="submit"]:hover {
+  background-color: #009ef7;
+  color: #fff;
+  box-shadow: 1px 1px 10px 1px #009ef7;
+}

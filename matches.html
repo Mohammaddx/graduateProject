@@ -33,7 +33,12 @@
   </head>
   <body>
     <div class="matches-page">
-      <button class="add"><i class="fas fa-plus"></i> Add Match</button>
+      <div>
+        <button class="add" href="#modal-add" uk-toggle>
+          <i class="fas fa-plus"></i> Add Match
+        </button>
+      </div>
+
       <div class="container">
         <div class="row">
           <div class=" col-md-6 col-sm-12 colxs-12">
@@ -69,14 +74,130 @@
                 <button type="button" class="btn btn-primary">
                   <i class="fa fa-info-circle"></i> Info
                 </button>
-                <button type="button" class="btn btn-secondary">
+                <a class="btn btn-secondary" href="#modal-edit" uk-toggle>
                   <i class="fa fa-edit"></i> Edit
-                </button>
-                <button type="button" class="btn btn-danger">
+                </a>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  uk-toggle="target: #modal-delete"
+                >
                   <i class="fa fa-trash"></i> Delete
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modals-->
+
+    <!--delete Modal-->
+    <div id="modal-delete" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Delete</h2>
+        <p>Are you sure you want to delete the match?</p>
+        <p class="uk-text-right">
+          <button
+            class="uk-button uk-button-default uk-modal-close"
+            type="button"
+          >
+            Cancel
+          </button>
+          <button class="uk-button uk-button-danger" type="button">
+            Delete
+          </button>
+        </p>
+      </div>
+    </div>
+    <!--edit Modal-->
+
+    <div id="modal-edit" class="uk-modal-full" uk-modal>
+      <div class="uk-modal-dialog">
+        <button
+          class="uk-modal-close-full uk-close-large"
+          type="button"
+          uk-close
+        ></button>
+        <div
+          class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
+          uk-grid
+        >
+          <div
+            class="uk-background-cover"
+            style="background-image: url('./images/editbg.jpg');"
+            uk-height-viewport
+          ></div>
+          <div class="uk-padding-large">
+            <h1>Edit Match</h1>
+            <form>
+              <input type="text" placeholder="name of tournament" />
+              <input type="time" name="" id="" />
+              <input type="date" name="" id="" />
+              <input type="text" placeholder="match place" />
+              <div class="teams-comp">
+                <p>Teams Names</p>
+                <input type="text" placeholder="name first team" />
+                <input type="text" placeholder="name second team" />
+              </div>
+              <div class="rulers-names">
+                <p>Rulers Name</p>
+                <input type="text" placeholder="first ruler name" />
+                <input type="text" placeholder="second ruler name" />
+                <input type="text" placeholder="third ruler name" />
+                <input type="text" placeholder="forth ruler name" />
+                <input type="text" placeholder="fifth ruler name" />
+              </div>
+
+              <input type="submit" value="Edit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal add-->
+
+    <div id="modal-add" class="uk-modal-full" uk-modal>
+      <div class="uk-modal-dialog">
+        <button
+          class="uk-modal-close-full uk-close-large"
+          type="button"
+          uk-close
+        ></button>
+        <div
+          class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
+          uk-grid
+        >
+          <div
+            class="uk-background-cover"
+            style="background-image: url('./images/addbg.jpg');"
+            uk-height-viewport
+          ></div>
+          <div class="uk-padding-large">
+            <h1>Add Match</h1>
+            <form>
+              <input type="text" placeholder="name of tournament" />
+              <input type="time" name="" id="" />
+              <input type="date" name="" id="" />
+              <input type="text" placeholder="match place" />
+              <div class="teams-comp">
+                <p>Teams Names</p>
+                <input type="text" placeholder="name first team" />
+                <input type="text" placeholder="name second team" />
+              </div>
+              <div class="rulers-names">
+                <p>Rulers Name</p>
+                <input type="text" placeholder="first ruler name" />
+                <input type="text" placeholder="second ruler name" />
+                <input type="text" placeholder="third ruler name" />
+                <input type="text" placeholder="forth ruler name" />
+                <input type="text" placeholder="fifth ruler name" />
+              </div>
+
+              <input type="submit" value="Add" />
+            </form>
           </div>
         </div>
       </div>
