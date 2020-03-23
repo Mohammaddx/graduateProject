@@ -60,6 +60,7 @@ body {
 }
 
 .body .left-side {
+  border: 1px solid #000;
   background-color: #fff;
   position: absolute;
   left: 0;
@@ -147,12 +148,10 @@ body {
 /*left side is done*/
 
 .body .right-side {
-  position: fixed;
-  overflow-y: scroll;
   height: 100vh;
-  width: 75%;
-  right: 0;
+  width: inherit;
   transition-duration: 0.4s;
+  border: 1px solid #f00;
 }
 
 .body .right-side .container .conv .response .message-response {
@@ -167,10 +166,14 @@ body {
 
 .body .right-side .container .conv {
   padding: 10px;
+  position: fixed;
+  width: inherit;
+  overflow-y: scroll;
 }
 
 .body .right-side .container .conv .send {
   padding: 15px 0;
+  width: inherit;
 }
 .body .right-side .container .conv .send .message-send {
   font-size: 13px;
@@ -188,11 +191,12 @@ body {
 .body .right-side .container .write {
   position: fixed;
   bottom: 0;
-  left: 300px;
-  width: 75%;
+  color: #000;
+  width: inherit;
   box-shadow: 1px 1px 10px 1px #aaa;
   border-top: 1px solid #aaa;
   padding: 10px;
+  margin: 0;
   transition-duration: 0.4s;
 }
 

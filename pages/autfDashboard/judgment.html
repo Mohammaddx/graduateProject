@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard |Players</title>
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <!--Css files-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../css/uikit-rtl.min.css" />
+    <link rel="stylesheet" href="../../css/uikit.min.css" />
+    <link rel="stylesheet" href="../../css/players.css" />
+  </head>
+  <body>
+    <div class="club-page">
+      <div class="search-add">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 colsm-12 col-xs-12">
+              <div class="add">
+                <button href="#modal-add" uk-toggle><i class="fas fa-user-plus"></i> Add Player</button>
+              </div>
+            </div>
+
+            <div class="col-md-6 colsm-12 col-xs-12">
+              <div class="search">
+                <form>
+                  <input type="text" placeholder="Search..." />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="card">
+              <img src="../../images/judgment.jpg" />
+              <h3>عماد زهورات</h3>
+              <div class="info">
+                <span>
+                  <i class="fas fa-futbol"></i> Goals:<span class="No-players"
+                    >11</span
+                  ></span
+                >
+                <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
+              </div>
+              <div class="buttons">
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-info-circle"></i> Info
+                </button>
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa fa-edit"></i> Edit
+                </button>
+                <button type="button" class="btn btn-danger">
+                  <i class="fa fa-trash"></i> Delete
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="card">
+              <img src="../../images/judgment.jpg" />
+              <h3>عماد زهورات</h3>
+              <div class="info">
+                <span>
+                  <i class="fas fa-futbol"></i> Goals:<span class="No-players"
+                    >11</span
+                  ></span
+                >
+                <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
+              </div>
+              <div class="buttons">
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-info-circle"></i> Info
+                </button>
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa fa-edit"></i> Edit
+                </button>
+                <button type="button" class="btn btn-danger">
+                  <i class="fa fa-trash"></i> Delete
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="card">
+              <img src="../../images/judgment.jpg" />
+              <h3>عماد زهورات</h3>
+              <div class="info">
+                <span>
+                  <i class="fas fa-futbol"></i> Goals:<span class="No-players"
+                    >11</span
+                  ></span
+                >
+                <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
+              </div>
+              <div class="buttons">
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-info-circle"></i> Info
+                </button>
+                <button type="button" class="btn btn-secondary" href="#modal-edit" uk-toggle>
+                  <i class="fa fa-edit"></i> Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  uk-toggle="target: #modal-delete"
+                >
+                  <i class="fa fa-trash"></i> Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modals-->
+
+    <!--delete Modal-->
+    <div id="modal-delete" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Delete</h2>
+        <p>Are you sure you want to delete the player?</p>
+        <p class="uk-text-right">
+          <button
+            class="uk-button uk-button-default uk-modal-close"
+            type="button"
+          >
+            Cancel
+          </button>
+          <button class="uk-button uk-button-danger" type="button">
+            Delete
+          </button>
+        </p>
+      </div>
+    </div>
+  
+ <!--edit Modal-->
+
+ <div id="modal-edit" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+      <button
+        class="uk-modal-close-full uk-close-large"
+        type="button"
+        uk-close
+      ></button>
+      <div
+        class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
+        uk-grid
+      >
+        <div
+          class="uk-background-cover"
+          style="background-image: url('./images/editbg.jpg');"
+          uk-height-viewport
+        ></div>
+        <div class="uk-padding-large">
+          <h1>Edit Club</h1>
+          <form>
+            <input type="text" placeholder="club name" />
+            <input type="text" placeholder="managment club name" />
+
+            <input type="text" placeholder="administrative board" />
+            <input type="text" placeholder="club class" />
+
+            <input type="number" placeholder="players number" />
+            <input type="text" placeholder="club place" />
+            <input type="text" placeholder="phone number" />
+            <div><input type="submit" value="Edit" /></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--modal add-->
+
+  <div id="modal-add" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+      <button
+        class="uk-modal-close-full uk-close-large"
+        type="button"
+        uk-close
+      ></button>
+      <div
+        class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
+        uk-grid
+      >
+        <div
+          class="uk-background-cover"
+          style="background-image: url('./images/addbg.jpg');"
+          uk-height-viewport
+        ></div>
+        <div class="uk-padding-large">
+          <h1>Add Club</h1>
+          <form>
+            <input type="text" placeholder="club name" />
+            <input type="text" placeholder="managment club name" />
+
+            <input type="text" placeholder="administrative board" />
+            <input type="text" placeholder="club class" />
+
+            <input type="number" placeholder="players number" />
+            <input type="text" placeholder="club place" />
+            <input type="text" placeholder="phone number" />
+
+            <div><input type="submit" value="Add" /></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--Js files-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../js/uikit-icons.min.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+  </body>
+</html>
